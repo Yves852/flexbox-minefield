@@ -2,3 +2,60 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    /* Set size to heigth of screen */
+    height: 100vh;
+}
+
+section {
+    /* Borders */
+    /* border: 4px solid #8f8d8f; */
+    box-shadow: 0 0 0 4px #8f8d8f, 
+                0 0 0 8px #c8cac8;
+    background-color: #cbcbcb;
+    width: 640px;
+    height: 640px;    
+    /* horizontal and vertical align */
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    /* Flex items */
+    display: flex;
+    flex-wrap: wrap;
+    /* Remove gap between rows */
+    align-content: flex-start;
+}
+
+/* section:before {
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid #c8cac8;
+} */
+
+article {
+    /* 78 + 2 borders => size of cell */
+    width: 78px;
+    height: 78px;
+    border: 1px dotted black;
+    text-align: center;
+
+}
+
+article>p {
+    margin-top: 40%;
+    margin-bottom: 50%;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+img {
+    padding-top: 20px;
+    width: 40px;
+    height: 40px;
+}
