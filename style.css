@@ -75,6 +75,15 @@ img {
     margin-bottom: 2px;
 }
 
+/* Making contents in unclicked cells hidden and visible on hover */
+.unclickedCell>* {
+    visibility: hidden;
+}
+
+.unclickedCell:hover>* {
+    visibility: visible;
+}
+
 .one {
     color: blue;
 }
