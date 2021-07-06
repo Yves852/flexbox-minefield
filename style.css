@@ -32,9 +32,10 @@ section {
 
 article {
     /* 78 + 2 borders => size of cell */
-    width: 78px;
-    height: 78px;
-    border: 1px dotted black;
+    width: 76px;
+    height: 76px;
+    border-right: 4px dotted black;
+    border-bottom: 4px dotted black;
     text-align: center;
 
 }
@@ -50,4 +51,26 @@ img {
     padding-top: 20px;
     width: 40px;
     height: 40px;
+}
+
+.emptyCell {
+    /* Cell size */
+    width: 68px;
+    height: 68px;
+    /* Borders */
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+    border-right: 4px solid #8f8d8f;
+    border-bottom: 4px solid #8f8d8f;
+    /* Solide outside border */
+    box-shadow: 3px 3px black;
+    /* Color */
+    background-color: #cbcbcb;
+    /* Offset for box limits */
+    outline-offset: -8px;    
+    /* margins */
+    margin-top: 2px;
+    margin-left: 2px;   
+    margin-right: 2px;
+    margin-bottom: 2px;
 }
