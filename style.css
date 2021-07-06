@@ -30,7 +30,7 @@ section {
     align-content: flex-start;
 }
 
-article {
+.clickedCell {
     /* 78 + 2 borders => size of cell */
     width: 76px;
     height: 76px;
@@ -40,7 +40,7 @@ article {
 
 }
 
-article>p {
+.clickedCell>p, .unclickedCell>p {
     margin-top: 25%;
     margin-bottom: 50%;
     font-size: xx-large;
@@ -76,6 +76,20 @@ img {
 }
 
 /* Making contents in unclicked cells hidden and visible on hover */
+.unclickedCell:hover {
+    /* Remove unclicked borders and margin*/
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    /* Same style as clickedCell */
+    width: 76px;
+    height: 76px;
+    border-right: 4px dotted black;
+    border-bottom: 4px dotted black;
+    text-align: center;
+}
+
+
 .unclickedCell>* {
     visibility: hidden;
 }
