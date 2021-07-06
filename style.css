@@ -55,22 +55,34 @@ img {
 
 .emptyCell {
     /* Cell size */
-    width: 68px;
-    height: 68px;
+    width: 70px;
+    height: 70px;
     /* Borders */
     border-left: 4px solid white;
     border-top: 4px solid white;
     border-right: 4px solid #8f8d8f;
     border-bottom: 4px solid #8f8d8f;
     /* Solide outside border */
-    box-shadow: 3px 3px black;
+    box-shadow: 2px 2px 0px 1px black;
     /* Color */
     background-color: #cbcbcb;
     /* Offset for box limits */
     outline-offset: -8px;    
     /* margins */
-    margin-top: 2px;
-    margin-left: 2px;   
+    margin-top: 0px;
+    margin-left: 0px;   
     margin-right: 2px;
     margin-bottom: 2px;
+}
+
+.one {
+    color: blue;
+}
+
+.two {
+    color: green;
+}
+
+.three {
+    color: red;
 }
